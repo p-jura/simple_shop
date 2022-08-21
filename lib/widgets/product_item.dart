@@ -10,7 +10,7 @@ class ProductItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _product = Provider.of<Product>(context, listen: false);
+    final _product = Provider.of<Product>(context);
     final cart = Provider.of<Cart>(context, listen: false);
     final _authToken = Provider.of<Auth>(context, listen: false);
 
